@@ -7,7 +7,6 @@ public class DescenteRecurciveTest {
         Writer writer = new Writer(file, algebra);
         System.out.println("Debut d'analyse syntaxique");
 
-
         System.out.println("Debut d'analyse lexicale");
         Reader r = new Reader(file);
         AnalLex lexical = new AnalLex(r.toString());
@@ -20,7 +19,6 @@ public class DescenteRecurciveTest {
 
         try {
             ElemAST RacineAST = dr.AnalSynt();
-
         } catch (Exception e) {
             System.out.println(e);
             e.printStackTrace();
@@ -34,7 +32,7 @@ public class DescenteRecurciveTest {
 
     @Test
     public void test1(){
-        //Assert.assertFalse(testwriter("testS1.txt","1*2+3*4+5*6"));
+        Assert.assertFalse(testwriter("testS1.txt","1*2+3*4+5*6"));
     }
     @Test
     public void test2(){
@@ -54,7 +52,7 @@ public class DescenteRecurciveTest {
     }
     @Test
     public void test6(){
-        Assert.assertTrue(testwriter("testS6.txt","a_b + 3"));
+        Assert.assertFalse(testwriter("testS6.txt","A_b + 3"));
     }
     @Test
     public void test7(){
@@ -72,6 +70,4 @@ public class DescenteRecurciveTest {
     public void test10(){
         Assert.assertTrue(testwriter("testS10.txt","(U_x + V_y ) * W__z / 35"));
     }
-
-
 }
