@@ -57,7 +57,7 @@ private Boolean createAST(String attendu){
       }
       case "S1": {
         NoeudAST noeud = new NoeudAST(ULcourant);
-        if ((root instanceof NoeudAST) ) {  //Cas ou il n'y a pas de parenthese
+        if ((root instanceof NoeudAST) ) {
           noeud.setEnfG(elemCourant);
           elemCourant.getParent().setEnfD(noeud);
           elemCourant.setParent(noeud);

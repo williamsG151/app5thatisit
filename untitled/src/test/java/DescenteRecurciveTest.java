@@ -40,7 +40,7 @@ public class DescenteRecurciveTest {
     }
     @Test
     public void test3(){
-        Assert.assertTrue(testwriter("testS3.txt","Ab_cde + Cewf"));
+        Assert.assertFalse(testwriter("testS3.txt","Ab_cde + Cewf"));
     }
     @Test
     public void test4(){
