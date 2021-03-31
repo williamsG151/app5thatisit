@@ -47,11 +47,11 @@ public class AnalLexTest {
     }
     @Test
     public void test7(){
-        Assert.assertFalse(testwriter("testL7.txt","3 + Cewf"));
+        Assert.assertFalse(testwriter("testL7.txt","( U_x – ) * W_z / 35"));
     }
     @Test
     public void test8(){
-        Assert.assertFalse(testwriter("testL8.txt","(V_y + V_X)"));
+        Assert.assertFalse(testwriter("testL8.txt","(55 - 47)* 14 / 2"));
     }
     @Test
     public void test9(){
